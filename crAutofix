@@ -1,0 +1,11 @@
+public with sharing class OpportunityService {
+    public void closeAllProposalOpportunities() {
+        List<Opportunity> opportunities = [SELECT Id, StageName FROM Opportunity];
+        for (Opportunity opp : opportunities) {
+            if (opp.StageName == 'Proposal') {
+                opp.StageName = 'Closed Won';
+            }
+        }
+        update opportunities;
+    }
+}

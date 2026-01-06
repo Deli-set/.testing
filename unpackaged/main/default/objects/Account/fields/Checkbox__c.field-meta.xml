@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checkbox__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is a checkbox for the purpose of being a checkbox</description>
+    <label>Checkbox</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
